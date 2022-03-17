@@ -1,0 +1,14 @@
+.main-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 36px;
+  gap: 24px;
+}
+h1, p {
+  margin: 0;
+}
+.main-img {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  text-align: right;
+}
