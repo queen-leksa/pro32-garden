@@ -1,0 +1,13 @@
+<h2>Ajax data</h2>
+<div class="cards-block">
+  <div class="card" *ngFor="let d of data, index as i">
+    <div>{{d.owner}}</div>
+    <div class="number">
+      <span *ngFor="let n of d.number">{{n}}</span>
+    </div>
+    <div>
+      <i [class]="types[d.type] || types['default']"></i>
+    </div>
+  </div>
+</div>
+<button type="button" (click)="loadData()">Load data</button>
